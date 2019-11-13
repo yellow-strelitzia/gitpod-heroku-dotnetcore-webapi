@@ -13,5 +13,5 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.0 AS runtime
 
 WORKDIR /app
 COPY --from=build /app/out ./
-#ENTRYPOINT ["dotnet", "webapp.dll"]
-CMD dotnet webapp.dll
+#ENTRYPOINT ["dotnet", "webapi.dll"]
+CMD dotnet webapi.dll
